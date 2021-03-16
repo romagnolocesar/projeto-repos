@@ -142,3 +142,29 @@ export const PageActions = styled.div`
   }
 
 `;
+
+export const FiltersBar = styled.div`
+  padding-bottom: 10px;
+
+  span{
+    font-weight: 600;
+  }
+
+  button{
+    outline: 0;
+    padding: 8px;
+    border: 0;
+    border-radius: 4px;
+    margin: 0 3px;  
+
+    &:nth-child(${props => props.active + 1 }){
+      background: #0071DB;
+      color: #FFF
+    }
+  }
+
+  button:hover{
+    cursor: pointer;
+    background-color: #AAA;
+  }
+`;
